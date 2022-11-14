@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="RL_foot">
+  
+  <planar_surface name="RearLeftFoot" link="RL_foot">
+    <origin rpy="0.0 0.63 0.0" xyz="-0.02 0.0 -0.0265" />
+    <points>
+      <point xy="-0.00825 0.00825" />
+        <point xy="0.00825 0.00825" />
+        <point xy="0.00825 -0.00825" />
+        <point xy="-0.00825 -0.00825" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

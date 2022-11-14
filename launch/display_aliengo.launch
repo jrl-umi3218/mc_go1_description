@@ -1,0 +1,27 @@
+<launch>
+  <arg name="model" value="$(find mc_aliengo_description)/urdf/aliengo.urdf"/>
+  <arg name="convexes" default="false" />
+  <arg name="surfaces" default="false" />
+
+  <param name="robot_description" textfile="$(arg model)" />
+
+  <group if="$(eval convexes==false and surfaces==false)">
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+      <param name="use_gui" value="true"/>
+    </node>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mc_aliengo_description)/launch/check_joint.rviz" />
+  </group>
+
+  <group if="$(eval convexes==true and surfaces==false)">
+    <include file="$(find mc_convex_visualization)/launch/display.launch">
+      <arg name="robot" value="Aliengo" />
+    </include>
+  </group>
+
+  <group if="$(eval convexes==false and surfaces==true)">
+    <include file="$(find mc_surfaces_visualization)/launch/display.launch">
+      <arg name="robot" value="Aliengo" />
+    </include>
+  </group>
+</launch>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>mc_aliengo_description</name>
+    <version>0.0.0</version>
+    <description>The mc_aliengo_description package</description>
+
+    <maintainer email="kidera@piecake.com">s-kidera</maintainer>
+    <license>TODO</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>aliengo_description</depend>
+
+</package>
