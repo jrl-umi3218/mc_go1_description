@@ -14,10 +14,9 @@ On an environment with ROS and catkin properly setup:
 ```
 $ cd ~/catkin_ws/src
 $ svn export https://github.com/unitreerobotics/unitree_ros/trunk/robots/aliengo_description
-    (or '$ git clone https://github.com/unitreerobotics/unitree_ros.git')
 $ git clone https://github.com/mc_aliengo_description
 $ cd mc_aliengo_description/scripts
-$ python ./generate_urdf.py @ALIENGO_DESCRIPTION_PATH@/urdf/aliengo.urdf
+$ python ./generate_urdf.py ../../aliengo_description/urdf/aliengo.urdf
 $ cd ~/catkin_ws
 $ catkin_make
 $ cd build
@@ -41,7 +40,7 @@ $ roslaunch mc_aliengo_description display_aliengo.launch
 ### Dependencies
 
  - [aliengo_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/aliengo_description)
- - [mesh_sampling](https://github.com/arntanguy/mesh_sampling)
+ - [mesh_sampling](https://github.com/jrl-umi3218/mesh_sampling)
  - qhull-bin
 
 ### Generation of convex files
@@ -49,11 +48,11 @@ To run the conversion, simply run
 
 ```
 $ source ~/catkin_ws/devel/setup.bash
-$ cd ~/catkin_ws/src/@MC_ALIENGO_DESCRIPTION_PATH@/scripts
-$ ./generate_convex.sh /home/@USERNAME@/catkin_ws/src/@ALIENGO_DESCRIPTION_PATH@
-  Running generate_convex.sh script from directory /home/@USERNAME@/catkin_ws/src/@MC_ALIENGO_DESCRIPTION_PATH@/scripts
+$ cd ~/catkin_ws/src/mc_aliengo_description/scripts
+$ ./generate_convex.sh ~/catkin_ws/src/aliengo_description
+  Running generate_convex.sh script from directory ~/catkin_ws/src/mc_aliengo_description/scripts
       :
       :
   Successfully generated convex from fetch_description package in /tmp/mc_aliengo_description
-$ mv /tmp/mc_aliengo_description/convex/aliengo ~/catkin_ws/src/@MC_ALIENGO_DESCRIPTION_PATH@/convex/.
+$ mv /tmp/mc_aliengo_description/convex/aliengo ~/catkin_ws/src/mc_aliengo_description/convex/.
 ```
