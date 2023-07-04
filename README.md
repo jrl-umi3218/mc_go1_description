@@ -13,10 +13,12 @@ On an environment with ROS and catkin properly setup:
 
 ```
 $ cd ~/catkin_ws/src
-$ svn export https://github.com/unitreerobotics/unitree_ros/trunk/robots/aliengo_description
-$ git clone https://github.com/mc_aliengo_description
-$ cd mc_aliengo_description/scripts
-$ python ./generate_urdf.py ../../aliengo_description/urdf/aliengo.urdf
+$ svn export https://github.com/unitreerobotics/unitree_ros/trunk/robots/go1_description
+
+
+$ git clone 
+$ cd 
+
 $ cd ~/catkin_ws
 $ catkin_make
 $ cd build

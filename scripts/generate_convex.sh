@@ -2,7 +2,7 @@
 
 # check arguments
 if [ $# -ne 1 ]; then
-  echo "Usage: generate_convex.sh aliengo_description_SOURCE_PREFIX"
+  echo "Usage: generate_convex.sh go1_description_SOURCE_PREFIX"
   exit 1
 fi
 
@@ -17,7 +17,7 @@ exit_if_error()
 }
 
 # set configuration variables
-export robot_name="aliengo"
+export robot_name="go1"
 export robot_desc_name="${robot_name}_description"
 export target_pkg_name="mc_${robot_name}_description"
 

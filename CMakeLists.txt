@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(mc_aliengo_description)
+project(mc_go1_description)
 
 find_package(catkin REQUIRED COMPONENTS
-  ur_e_description
+    genmsg
+    roscpp
+    std_msgs
+    tf
 )
 
-catkin_package()
+catkin_package(
+    CATKIN_DEPENDS
+)

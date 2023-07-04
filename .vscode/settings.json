@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ahmedaymen/ws_moveit/devel/lib/python3/dist-packages",
+        "/home/ahmedaymen/WorkSpace/mc_rtc/src/catkin_data_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/ahmedaymen/WorkSpace/sofa/build/lib/python3/site-packages",
+        "/opt/openrobots/lib/python2.7/site-packages",
+        "/usr/local/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ahmedaymen/ws_moveit/devel/lib/python3/dist-packages",
+        "/home/ahmedaymen/WorkSpace/mc_rtc/src/catkin_data_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/ahmedaymen/WorkSpace/sofa/build/lib/python3/site-packages",
+        "/opt/openrobots/lib/python2.7/site-packages",
+        "/usr/local/lib/python3/dist-packages"
+    ]
+}

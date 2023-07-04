@@ -15,7 +15,7 @@ def update_urdf(urdf_filepath):
 
   for i in root.iter():
     if i.tag == 'robot':
-      i.set('name', 'mc_aliengo_description')
+      i.set('name', 'mc_go1_description')
 
   for link in root.findall('link'):
     if not 'name' in link.attrib:
@@ -29,7 +29,7 @@ def update_urdf(urdf_filepath):
         if i.tag == 'origin':
           origin_attrib = i.attrib
         elif i.tag == 'mesh':
-          i.set('filename', i.attrib['filename'].replace('aliengo_description', 'mc_aliengo_description'))
+          i.set('filename', i.attrib['filename'].replace('go1_description', 'mc_go1_description'))
           mesh_attrib = i.attrib
 
     # update collision
@@ -57,13 +57,13 @@ def update_urdf(urdf_filepath):
 if __name__ == '__main__':
   args = sys.argv
   if 2 != len(args):
-    print("Usage: python ./generate_urdf.py aliengo_description_urdf_filepath")
+    print("Usage: python ./generate_urdf.py go1_description_urdf_filepath")
     exit()
 
   # copy original urdf to /tmp
   org_urdf_filepath = args[1]
   work_urdf_path = '/tmp/urdf'
-  work_urdf_filepath = work_urdf_path + '/aliengo.urdf'
+  work_urdf_filepath = work_urdf_path + '/go1.urdf'
   if not os.path.isdir(work_urdf_path):
     os.mkdir(work_urdf_path)
   shutil.copyfile(org_urdf_filepath, work_urdf_filepath)
@@ -72,9 +72,9 @@ if __name__ == '__main__':
   update_urdf(work_urdf_filepath)
 
   # move update file
-  mc_aliengo_description_path = '../'
-  if os.path.isdir(mc_aliengo_description_path + 'urdf'):
-    shutil.move(work_urdf_filepath, mc_aliengo_description_path + 'urdf/aliengo.urdf')
+  mc_go1_description_path = '../'
+  if os.path.isdir(mc_go1_description_path + 'urdf'):
+    shutil.move(work_urdf_filepath, mc_go1_description_path + 'urdf/go1.urdf')
   else:
-    shutil.move(work_urdf_path, mc_aliengo_description_path)
+    shutil.move(work_urdf_path, mc_go1_description_path)
 
