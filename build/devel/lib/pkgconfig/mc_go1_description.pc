@@ -1,8 +1,0 @@
-prefix=/home/ahmedaymen/WorkSpace/mc_rtc/src/catkin_data_ws/src/mc_rtc_data/mc_go1_description/build/devel
-
-Name: mc_go1_description
-Description: Description of mc_go1_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
