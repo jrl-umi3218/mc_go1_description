@@ -1,6 +1,6 @@
-# Aliengo robot description for [mc_rtc](https://jrl-umi3218.github.io/mc_rtc/)
-This package has additional convex and rsdf files for mc_aliengo robot module used by [mc_rtc](https://jrl-umi3218.github.io/mc_rtc/) control framework.
-Aliengo robot has urdf and meshes in the original [aliengo_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/aliengo_description) package.
+# Go1 robot description for [mc_rtc](https://jrl-umi3218.github.io/mc_rtc/)
+This package has additional convex and rsdf files for mc_go1 robot module used by [mc_rtc](https://jrl-umi3218.github.io/mc_rtc/) control framework.
+go1 robot has urdf and meshes in the original [go1_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go1_description) package.
 
 It contains the following directories:
  - `convex/`: convex hulls (generated from pointclouds sampled from the dae meshes)
@@ -30,7 +30,7 @@ If your catkin environment is sourced `source ~/catkin_ws/install/setup.bash`, t
 To display the robot, you can use:
 
 ```
-$ roslaunch mc_aliengo_description display_aliengo.launch
+$ roslaunch mc_go1_description display_go1.launch
 ```
 
  - If you have mc_rtc and the corresponding robot module installed, you can use the `convexes:=True` or `surfaces:=True` arguments to display the robot convexes and surfaces.
@@ -41,7 +41,7 @@ $ roslaunch mc_aliengo_description display_aliengo.launch
 
 ### Dependencies
 
- - [aliengo_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/aliengo_description)
+ - [go1_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go1_description)
  - [mesh_sampling](https://github.com/jrl-umi3218/mesh_sampling)
  - qhull-bin
 
@@ -50,11 +50,11 @@ To run the conversion, simply run
 
 ```
 $ source ~/catkin_ws/devel/setup.bash
-$ cd ~/catkin_ws/src/mc_aliengo_description/scripts
-$ ./generate_convex.sh ~/catkin_ws/src/aliengo_description
-  Running generate_convex.sh script from directory ~/catkin_ws/src/mc_aliengo_description/scripts
+$ cd ~/catkin_ws/src/mc_go1_description/scripts
+$ ./generate_convex.sh ~/catkin_ws/src/go1_description
+  Running generate_convex.sh script from directory ~/catkin_ws/src/mc_go1_description/scripts
       :
       :
-  Successfully generated convex from fetch_description package in /tmp/mc_aliengo_description
-$ mv /tmp/mc_aliengo_description/convex/aliengo ~/catkin_ws/src/mc_aliengo_description/convex/.
+  Successfully generated convex from fetch_description package in /tmp/mc_go1_description
+$ mv /tmp/mc_go1_description/convex/go1 ~/catkin_ws/src/mc_go1_description/convex/.
 ```
