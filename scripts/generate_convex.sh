@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# check arguments
-if [ $# -ne 1 ]; then
-  echo "Usage: generate_convex.sh go1_description_SOURCE_PREFIX"
-  exit 1
-fi
-
 # refering to https://github.com/isri-aist/mc_fetch_description/blob/main/scripts/generate_convex.sh
 exit_if_error()
 {
@@ -18,11 +12,10 @@ exit_if_error()
 
 # set configuration variables
 export robot_name="go1"
-export robot_desc_name="${robot_name}_description"
+export robot_desc_name="mc_${robot_name}_description"
 export target_pkg_name="mc_${robot_name}_description"
 
-#export org_path=`rospack find ${robot_desc_name}`       # original robot_description package path (assuming this has dae mesh files)
-export org_path=$1
+export org_path=`rospack find ${robot_desc_name}`       # original robot_description package path (assuming this has dae mesh files)
 export tmp_path="/tmp/generate_${target_pkg_name}"      # tmp_path were the files are generated
 export gen_path="/tmp/${target_pkg_name}"               # path were the robot_description package gets generated
 
