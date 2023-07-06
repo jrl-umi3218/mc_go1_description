@@ -393,12 +393,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/hip.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -445,12 +439,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/thigh_mirror.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -497,12 +485,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -521,12 +503,6 @@
         <sphere radius="0.01"/>
       </geometry>
     </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <mass value="0.06"/>
       <inertia ixx="9.600000000000001e-06" ixy="0.0" ixz="0.0" iyy="9.600000000000001e-06" iyz="0.0" izz="9.600000000000001e-06"/>
@@ -602,12 +578,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/hip.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -654,12 +624,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/thigh.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -706,12 +670,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -730,12 +688,6 @@
         <sphere radius="0.01"/>
       </geometry>
     </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <mass value="0.06"/>
       <inertia ixx="9.600000000000001e-06" ixy="0.0" ixz="0.0" iyy="9.600000000000001e-06" iyz="0.0" izz="9.600000000000001e-06"/>
@@ -811,12 +763,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/hip.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -863,12 +809,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/thigh_mirror.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -915,12 +855,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -939,12 +873,6 @@
         <sphere radius="0.01"/>
       </geometry>
     </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <mass value="0.06"/>
       <inertia ixx="9.600000000000001e-06" ixy="0.0" ixz="0.0" iyy="9.600000000000001e-06" iyz="0.0" izz="9.600000000000001e-06"/>
@@ -1020,12 +948,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/hip.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -1072,12 +994,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/thigh.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -1124,12 +1040,6 @@
       </geometry>
       <material name="green"/>
     </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <mass value="0.089"/>
@@ -1148,12 +1058,6 @@
         <sphere radius="0.01"/>
       </geometry>
     </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://mc_go1_description/meshes/calf.dae" scale="1 1 1"/>
-      </geometry>
-    </collision>
     <inertial>
       <mass value="0.06"/>
       <inertia ixx="9.600000000000001e-06" ixy="0.0" ixz="0.0" iyy="9.600000000000001e-06" iyz="0.0" izz="9.600000000000001e-06"/>
